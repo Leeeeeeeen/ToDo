@@ -1,0 +1,8 @@
+{
+    "files": [], // ファイルの直接指定を空にすることで、参照されたプロジェクトのみを使用
+  
+    "references": [ // 他のTypeScriptプロジェクト設定ファイルを参照
+      { "path": "./tsconfig.app.json" }, // アプリケーション用のtsconfigファイルを参照
+      { "path": "./tsconfig.node.json" } // Node.js用のtsconfigファイルを参照
+    ]
+  }

@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "target": "ES2020", // コンパイル後のJavaScriptのターゲットバージョンをES2020に設定
+      "useDefineForClassFields": true, // クラスフィールドをdefineプロパティ（ES2020標準）で出力
+      "lib": ["ES2020", "DOM", "DOM.Iterable"], // 利用するライブラリをES2020、DOM、およびDOMのIterableに設定
+      "module": "ESNext", // モジュールシステムをESNextに設定（ES Modulesを使用）
+      "skipLibCheck": true, // 型定義ファイル（.d.ts）のチェックをスキップ
+  
+      /* Bundler mode */
+      "moduleResolution": "bundler", // モジュール解決方法をバンドラ向けに設定（ViteやWebpack用）
+      "allowImportingTsExtensions": true, // TypeScriptファイルの拡張子付きインポートを許可
+      "isolatedModules": true, // 各ファイルを個別にトランスパイル（バンドラ向け）
+      "moduleDetection": "force", // 明示的なimport/exportをモジュールとして強制認識
+      "noEmit": true, // 出力ファイルを生成しない（型チェックのみ）
+      "jsx": "react-jsx", // JSXの構文をReact用に設定
+  
+      /* Linting */
+      "strict": true, // TypeScriptの厳密モードを有効化（型チェックを強化）
+      "noUnusedLocals": true, // 未使用のローカル変数があるとエラー
+      "noUnusedParameters": true, // 未使用の関数パラメータがあるとエラー
+      "noFallthroughCasesInSwitch": true // switch文で意図しないfallthroughがあるとエラー
+    },
+    "include": ["src"] // srcディレクトリ内のファイルをコンパイル対象に指定
+  }

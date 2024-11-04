@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "target": "ES2022", // コンパイル後のJavaScriptのターゲットバージョンをES2022に設定
+      "lib": ["ES2023"], // 利用するライブラリをES2023に設定し、最新のJavaScript機能を使用可能に
+      "module": "ESNext", // モジュールシステムをESNextに設定（ES Modulesを使用）
+      "skipLibCheck": true, // 型定義ファイル（.d.ts）の型チェックをスキップ
+  
+      /* Bundler mode */
+      "moduleResolution": "bundler", // モジュール解決方法をバンドラ用に設定（ViteやWebpack用）
+      "allowImportingTsExtensions": true, // TypeScriptファイルの拡張子付きインポートを許可
+      "isolatedModules": true, // 各ファイルを個別にトランスパイル（バンドラ向けに必要）
+      "moduleDetection": "force", // 明示的なimport/exportがないファイルもモジュールとして扱う
+      "noEmit": true, // 出力ファイルを生成しない（型チェックのみ行う）
+  
+      /* Linting */
+      "strict": true, // TypeScriptの厳密モードを有効にし、厳格な型チェックを適用
+      "noUnusedLocals": true, // 未使用のローカル変数がある場合にエラー
+      "noUnusedParameters": true, // 未使用の関数パラメータがある場合にエラー
+      "noFallthroughCasesInSwitch": true // switch文で意図しないfallthroughがあるとエラー
+    },
+    "include": ["vite.config.ts"] // チェック対象をvite.config.tsファイルに限定
+  }

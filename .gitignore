@@ -1,0 +1,25 @@
+# Logs - ログファイル
+logs                     # logsディレクトリ全体を無視
+*.log                    # 拡張子が.logのファイルをすべて無視
+npm-debug.log*           # npmのデバッグログファイルを無視（npm-debug.logなど）
+yarn-debug.log*          # Yarnのデバッグログファイルを無視
+yarn-error.log*          # Yarnのエラーログファイルを無視
+pnpm-debug.log*          # pnpmのデバッグログファイルを無視
+lerna-debug.log*         # Lernaのデバッグログファイルを無視
+
+# Dependency directories - 依存関係のディレクトリ
+node_modules             # npmやYarnでインストールされる依存関係を保存するディレクトリ
+dist                     # ビルド成果物を格納するディレクトリ
+dist-ssr                 # サーバーサイドレンダリング用のビルド成果物ディレクトリ
+*.local                  # .local拡張子のファイルを無視
+
+# Editor directories and files - エディタ関連の設定ファイルとディレクトリ
+.vscode/*                # VSCodeの設定ファイルを無視
+!.vscode/extensions.json # ただし、extensions.jsonファイルはGitで管理
+.idea                    # JetBrains系エディタ（WebStorm, IntelliJなど）の設定ディレクトリ
+.DS_Store                # macOSが作成するメタデータファイル
+*.suo                    # Visual Studioのユーザー設定ファイル
+*.ntvs*                  # Visual Studio Node.jsプロジェクトファイル
+*.njsproj                # Visual StudioのNode.jsプロジェクトファイル
+*.sln                    # Visual Studioのソリューションファイル
+*.sw?                    # Vimの一時ファイル（拡張子が.swpなど）
