@@ -23,3 +23,4 @@ dist-ssr                 # サーバーサイドレンダリング用のビル�
 *.njsproj                # Visual StudioのNode.jsプロジェクトファイル
 *.sln                    # Visual Studioのソリューションファイル
 *.sw?                    # Vimの一時ファイル（拡張子が.swpなど）
+node_modules
